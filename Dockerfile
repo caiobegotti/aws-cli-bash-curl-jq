@@ -6,6 +6,6 @@ FROM alpine:latest
 # but not running bash (which i need to keep things tidy)
 # so i had to come up with my own "aws-ready" container
 # with which i can run non-trivial scripts using all that
-RUN apk --update-cache --upgrade --verbose add bash less vim curl jq aws-cli && rm -rf /var/cache/apk/*
+RUN apk --update-cache --upgrade --verbose add bash less vim curl jq coreutils aws-cli && rm -rf /var/cache/apk/*
 
 WORKDIR /tmp
