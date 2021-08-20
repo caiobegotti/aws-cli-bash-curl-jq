@@ -1,64 +1,65 @@
 # the brendan gregg stack
-# strace
-# opensnoop
-# lsof
-# fatrace
+# strace strace
+# opensnoop 
+# lsof lsof
+# fatrace fatrace
 # filelife
 # pcstat
-# perf
-# ftrace
+# perf linux-tools-common
+# ftrace 
 # lttng
-# bcc
-# bpftrace
+# bcc bcc
+# bpftrace bpftrace
 # ext4dist
 # ext4slower
 # btrsslower
 # nfsslower
 # xfsslower
-# xfsslower
-# iostat
+# iostat sysstat
 # biosnoop
 # biolatency
 # blkstrace
 # mdflush
-# tiptop
+# tiptop tiptop
 # lstrace
-# ss
-# nstat
+# ss iproute2
+# nstat iproute2
 # tcplife
 # tcpretrans
 # udpconnect
-# nicstat
+# nicstat nicstat
 # netstat
 # ip
 # hardirqs
 # criticalstat
-# numastat
-# free
+# numastat numactl
+# free procps
 # slasbtop
-# vmstat
-# pidstat
-# ps
-# top
-# atop
+# vmstat procps
+# pidstat sysstat
+# ps procps
+# top procps
+# atop atop
 # softirqs
 # offcputime
 # runqlen
 # profile
-# mpstat
+# mpstat sysstat
 # execsnoop
 # gethostlatency
 # sar
-# dmesg
-# dstat
-# turbostat
+# dmesg util-linux
+# dstat dstat
+# turbostat linux-tools-common
 # showboost
-# rdmsr
-# swapon
-# ethtool
-# snmpget
-# lldptool
-# tcpdump
+# rdmsr msr-tools
+# swapon mount
+# ethtool ethtool
+# snmpget snmp
+# lldptool lldpad
+# tcpdump tcpdump
+# dtrace systemtap-sdt-dev
+
 
 # should use a sha256 here but for some reason alpine 3.14.1 segfaults docker when i try it
 FROM alpine:latest
